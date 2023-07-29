@@ -11,13 +11,13 @@ module.exports = {
     mods: { theme: 'islands' },
     content: [
         {
-            block: 'header',
+            tag: 'header',
             content: [
                 'header content goes here'
             ]
         },
         {
-            block: 'footer',
+            tag: 'footer',
             content: [
                 'footer content goes here'
             ]
