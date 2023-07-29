@@ -1,0 +1,22 @@
+.header-layout {
+    display: inline-grid;
+    grid-template-columns: 100px 5fr 2fr;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+.header-layout__logo {
+    height: 65px;
+}
+
+.header-layout__main{
+    height: 65px;
+}
+
+.header-layout__third {
+    height: 65px;
+}
+
+.header-layout_shadow_down {
+    box-shadow: 0 5px 5px darkgrey;
+}
