@@ -1,6 +1,8 @@
 .navigation {
     display: flex;
-    flex-wrap: nowrap;
+    @media (min-width: 780px) {
+        flex-wrap: nowrap;
+    }
     height: 100%;
     justify-content: space-between;
     background-color: #282828;

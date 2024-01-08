@@ -1,12 +1,30 @@
 .header-layout {
-    display: inline-grid;
-    grid-template-columns: 10vw 5fr 2fr;
-    justify-content: stretch;
-    align-content: stretch;
-    height: 6.5vw;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 780px) {
+        display: inline-grid;
+        grid-template-columns: auto 5fr 2fr;
+        justify-content: stretch;
+        align-content: stretch;
+    }
+}
+
+.header-layout__logo{
+    /* this block is responsible for header's height
+
+    Note: current width/height should be 20/13 — as logo image
+    */
+    align-self: center;
+    width: 40vw;
+    height: 26vw;
+    @media (min-width: 780px) {
+        width: 10vw;
+        height: 6.5vw;
+    }
 }
 
 .header-layout__main{
+    
 }
 
 .header-layout__third {
