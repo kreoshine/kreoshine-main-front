@@ -1,0 +1,6 @@
+.logo-background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url('/static/images/logo-mini.svg');
+}

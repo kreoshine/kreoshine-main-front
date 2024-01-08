@@ -11,7 +11,7 @@ module.exports = {
     content: [
         {
             block: 'header-layout',
-            mods: {'shadow': 'down'},
+            mods: {'shadow': 'down'}, 
             tag: 'header',
             content: [
                 {
@@ -20,8 +20,7 @@ module.exports = {
                         block: 'link',
                         url: '/',
                         content: {
-                            block: 'image',
-                            url: '/static/images/logo-mini.svg'
+                            block: 'logo-background',
                         }
                     },
                 },

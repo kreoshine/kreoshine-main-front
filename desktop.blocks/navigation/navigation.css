@@ -21,7 +21,7 @@
 .navigation__link {
     text-decoration: none;
     white-space: nowrap;
-    padding: 10px;
+    padding: 1vh;
     color: white;
 }
 
