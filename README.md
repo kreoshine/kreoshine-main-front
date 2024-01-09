@@ -18,3 +18,13 @@ npm install
 ```
 
 #### See [BEM](https://ru.bem.info/) for more info 
+
+### Development
+
+
+```bash
+export PATH=./node_modules/.bin:$PATH
+```
+```bash
+npm start
+```
