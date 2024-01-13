@@ -1,0 +1,15 @@
+.main-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  background-color: #c0e836;  /* move to theme */
+}
+
+.main-contacts__link {
+  white-space: nowrap;
+  margin: 0 5px;
+  padding: 2px;
+  color: black;  /* move to theme */
+}

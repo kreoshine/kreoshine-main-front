@@ -41,6 +41,7 @@ const techs = {
         { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
         'lib.blocks',
         'common.blocks',
+        'header.blocks',
         'desktop.blocks'
     ];
 
