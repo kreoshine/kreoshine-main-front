@@ -42,7 +42,6 @@ const techs = {
         'lib.blocks',
         'common.blocks',
         'header.blocks',
-        'desktop.blocks'
     ];
 
 module.exports = function(config) {

@@ -3,7 +3,6 @@ module.exports = {
 
     levels: {
         'common.blocks': {},
-        'desktop.blocks': {},
         'desktop.bundles': {}
     },
 
