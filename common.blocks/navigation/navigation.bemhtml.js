@@ -1,4 +1,7 @@
 block('navigation').tag()('nav');
+block('navigation').mods()(
+    {'theme': true}
+);
 block('navigation').content()(function() {
   return [
     {

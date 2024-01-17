@@ -1,0 +1,66 @@
+
+@property --main-bg-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: white;
+}
+
+@property --side-gradient-main-bg-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: rgb(184 184 184);
+}
+
+@property --main-text-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: black;
+}
+
+@property --extra-bg-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #282828;
+}
+
+@property --extra-border-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: white;
+}
+
+@property --extra-text-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: white;
+}
+
+@property --extra-hovered-text-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #c0e836;
+}
+
+@property --attent-bg-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #c0e836;
+}
+
+@property --attent-contrasted-text-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: black;
+}
+
+:root {
+  --main-bg-color: initial;
+  --side-gradient-main-bg-color: initial;
+  --main-text-color: initial;
+  --extra-bg-color: initial;
+  --extra-border-color: initial;
+  --extra-text-color: initial;
+  --extra-hovered-text-color: initial;
+  --attent-bg-color: initial;
+  --attent-text-color: initial;
+}

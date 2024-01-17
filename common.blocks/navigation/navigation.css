@@ -5,19 +5,13 @@
   }
   height: 100%;
   justify-content: space-between;
-  background-color: #282828;
 }
 
 .navigation__box {
   flex: 1 1 auto;
-  border-right: white 1px solid;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.navigation__box:last-child {
-  border-right: none;
 }
 
 .navigation__link {
@@ -25,8 +19,4 @@
   white-space: nowrap;
   padding: 1vh;
   color: white;
-}
-
-.navigation__link:hover {
-  color: yellow;
 }

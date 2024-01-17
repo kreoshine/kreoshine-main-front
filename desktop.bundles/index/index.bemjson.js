@@ -11,7 +11,6 @@ module.exports = {
     content: [
         {
             block: 'header',
-            mods: {'shadow': 'down'},
         },
 
         {

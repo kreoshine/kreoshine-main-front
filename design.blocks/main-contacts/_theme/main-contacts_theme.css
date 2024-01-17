@@ -1,0 +1,8 @@
+.main-contacts_theme {
+  background-color: var(--attent-bg-color);
+}
+
+.main-contacts_theme .main-contacts__link {
+  white-space: nowrap;
+  color: var(--attent-text-color);
+}
