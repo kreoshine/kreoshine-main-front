@@ -1,3 +1,4 @@
+block('navigation').tag()('nav');
 block('navigation').content()(function() {
   return [
     {
