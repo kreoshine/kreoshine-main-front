@@ -19,5 +19,4 @@ block('header')(
       },
     ];
   }),
-  addMix()({ elem : 'layout' }),
 );
