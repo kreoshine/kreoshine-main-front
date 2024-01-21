@@ -21,6 +21,14 @@ block('header')(
       {
         block: 'main-contacts',
       },
+      {
+          elem: 'bar',
+          content: [
+              {
+                  block: 'theme-switcher',
+              },
+          ]
+      },
     ];
   }),
 );

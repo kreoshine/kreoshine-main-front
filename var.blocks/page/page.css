@@ -1,66 +1,35 @@
 
-@property --main-bg-color {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: white;
-}
-
-@property --side-gradient-main-bg-color {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: rgb(184 184 184);
-}
-
-@property --main-text-color {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: black;
-}
-
-@property --extra-bg-color {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #282828;
-}
-
-@property --extra-border-color {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: white;
-}
-
-@property --extra-text-color {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: white;
-}
-
-@property --extra-hovered-text-color {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #c0e836;
-}
-
-@property --attent-bg-color {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #c0e836;
-}
-
-@property --attent-contrasted-text-color {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: black;
-}
-
 :root {
-  --main-bg-color: initial;
-  --side-gradient-main-bg-color: initial;
-  --main-text-color: initial;
-  --extra-bg-color: initial;
-  --extra-border-color: initial;
-  --extra-text-color: initial;
-  --extra-hovered-text-color: initial;
-  --attent-bg-color: initial;
-  --attent-text-color: initial;
+  /* light theme colors */
+  --light-main-bg-color: white;
+  --light-side-gradient-main-bg-color: rgb(184 184 184);
+  --light-main-text-color: black;
+  --light-extra-bg-color: #282828;
+  --light-extra-border-color: white;
+  --light-extra-text-color: white;
+  --light-extra-hovered-text-color: #c0e836;
+  --light-attent-bg-color: #c0e836;
+  --light-attent-text-color: black;
+
+  /*  dark theme colors */
+  --dark-main-bg-color: #282828;
+  --dark-side-gradient-main-bg-color: black;
+  --dark-main-text-color: white;
+  --dark-extra-bg-color: rgb(184 184 184);
+  --dark-extra-border-color: #282828;
+  --dark-extra-text-color: black;
+  --dark-extra-hovered-text-color: orange;
+  --dark-attent-bg-color: orange;
+  --dark-attent-text-color: black;
+
+  /* var bellow should be used in CSS */
+  --main-bg-color: var(--light-main-bg-color);
+  --side-gradient-main-bg-color: var(--light-side-gradient-main-bg-color);
+  --main-text-color: var(--light-main-text-color);
+  --extra-bg-color: var(--light-extra-bg-color);
+  --extra-border-color: var(--light-extra-border-color);
+  --extra-text-color: var(--light-extra-text-color);
+  --extra-hovered-text-color: var(--light-extra-hovered-text-color);
+  --attent-bg-color: var(--light-attent-bg-color);
+  --attent-text-color: var(--light-attent-text-color);
 }
