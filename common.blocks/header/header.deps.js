@@ -3,9 +3,10 @@
     shouldDeps: [
         // lib
         { block: 'link' },
+        { block: 'icon' },
+        { block: 'image' },
 
         // common
-        { block: 'logo-image' },
         { block: 'main-contacts' },
         { block: 'navigation' },
         { block: 'theme-switcher' },

@@ -1,12 +1,16 @@
 .header {
+  /* min-height: 3rem; */
   display: flex;
   flex-direction: column;
   @media (min-width: 780px) {
-      min-height: 6vw;
       display: inline-grid;
       grid-template-columns: auto 5fr 2fr auto;
       align-items: center;
   }
+}
+
+.header__logo {
+  height: 3rem;
 }
 
 .header__home-link {

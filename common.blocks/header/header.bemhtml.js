@@ -10,8 +10,9 @@ block('header')(
         mix: [{block: 'header', elem: 'home-link'}],
         url: '/',
         content: {
-          block: 'logo-image',
-          mods: {'size': 's'}
+          block: 'image',
+          mix: [{block: 'header', elem: 'logo'}],
+          url: '/static/images/logo.svg',
         }
       },
       {
