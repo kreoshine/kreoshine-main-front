@@ -37,9 +37,11 @@ const techs = {
         { path: 'node_modules/bem-core/desktop.blocks', check: false },
         { path: 'node_modules/bem-components/common.blocks', check: false },
         { path: 'node_modules/bem-components/desktop.blocks', check: false },
-        { path: 'node_modules/bem-components/design/common.blocks', check: false },
-        { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
+        // { path: 'node_modules/bem-components/design/common.blocks', check: false },
+        // { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
+        'lib.blocks',
         'common.blocks',
+        'header.blocks',
         'desktop.blocks'
     ];
 

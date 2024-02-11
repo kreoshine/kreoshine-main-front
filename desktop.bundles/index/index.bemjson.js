@@ -8,15 +8,14 @@ module.exports = {
         { elem: 'css', url: 'index.min.css' }
     ],
     scripts: [{ elem: 'js', url: 'index.min.js' }],
-    mods: { theme: 'islands' },
     content: [
         {
-            tag: 'header',
-            content: [
-                'header content goes here'
-            ]
+            block: 'header',
+            mods: {'shadow': 'down'}, 
         },
+
         {
+            block: 'footer-layout',
             tag: 'footer',
             content: [
                 'footer content goes here'
