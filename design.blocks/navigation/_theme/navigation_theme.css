@@ -6,10 +6,6 @@
   border-right: var(--extra-border-color) 1px solid;
 }
 
-.navigation_theme .navigation__box:last-child {
-  border-right: none;
-}
-
 .navigation_theme .navigation__link {
   text-decoration: none;
   white-space: nowrap;
