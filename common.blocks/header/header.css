@@ -2,9 +2,31 @@
   /* min-height: 3rem; */
   display: flex;
   flex-direction: column;
-  @media (min-width: 780px) {
-      display: inline-grid;
-      grid-template-columns: 5fr 2fr auto;
-      align-items: center;
+}
+
+@media (min-width: 780px) {
+  .header {
+    display: inline-grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
   }
+}
+
+.header__icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.3rem;
+}
+
+.header__icon-wrapper {
+  margin: 0 0.5rem;
+  padding: 0;
+  border: 0;
+}
+
+.header__bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
