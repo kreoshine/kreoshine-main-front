@@ -7,16 +7,13 @@
   justify-content: space-between;
 }
 
+.navigation__logo {
+  height: 3rem;
+}
+
 .navigation__box {
   flex: 1 1 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.navigation__link {
-  text-decoration: none;
-  white-space: nowrap;
-  padding: 1vh;
-  color: white;
 }

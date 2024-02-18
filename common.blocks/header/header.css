@@ -4,15 +4,7 @@
   flex-direction: column;
   @media (min-width: 780px) {
       display: inline-grid;
-      grid-template-columns: auto 5fr 2fr auto;
+      grid-template-columns: 5fr 2fr auto;
       align-items: center;
   }
-}
-
-.header__logo {
-  height: 3rem;
-}
-
-.header__home-link {
-  align-self: center;
 }

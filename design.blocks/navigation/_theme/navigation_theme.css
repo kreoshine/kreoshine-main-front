@@ -20,3 +20,7 @@
 .navigation_theme .navigation__link:hover {
   color: var(--extra-hovered-text-color);
 }
+
+.navigation_theme .navigation__home-box {
+  background-color: var(--main-bg-color);
+}

@@ -5,6 +5,16 @@ block('navigation').mods()(
 block('navigation').content()(function() {
   return [
     {
+      block: 'link',
+      mix: [{block: 'navigation', elem: 'home-box'}],
+      url: '/',
+      content: {
+        block: 'image',
+        mix: [{block: 'navigation', elem: 'logo'}],
+        url: '/static/images/logo.svg',
+      }
+    },
+    {
         elem: 'box',
         mix: [{block: 'navigation', elem: 'box'}],
         content: {

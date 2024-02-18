@@ -6,18 +6,7 @@ block('header')(
   content()(function() {
     return [
       {
-        block: 'link',
-        mix: [{block: 'header', elem: 'home-link'}],
-        url: '/',
-        content: {
-          block: 'image',
-          mix: [{block: 'header', elem: 'logo'}],
-          url: '/static/images/logo.svg',
-        }
-      },
-      {
         block: 'navigation',
-        mods: {'theme': true}
       },
       {
         block: 'main-contacts',

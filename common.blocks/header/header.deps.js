@@ -1,11 +1,6 @@
 ({
     block: 'header',
     shouldDeps: [
-        // lib
-        { block: 'link' },
-        { block: 'icon' },
-        { block: 'image' },
-
         // common
         { block: 'main-contacts' },
         { block: 'navigation' },
