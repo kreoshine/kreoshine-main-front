@@ -10,6 +10,8 @@ block('navigation').content()(function() {
       url: '/',
       content: {
         block: 'image',
+        alt: 'Главная',
+        title: 'Главная',
         mix: [{block: 'navigation', elem: 'logo'}],
         url: '/static/images/logo.svg',
       }
