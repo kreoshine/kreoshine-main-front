@@ -7,7 +7,7 @@
   --light-extra-bg-color: #e1e1e1;
   --light-extra-border-color: #282828;
   --light-extra-text-color: black;
-  --light-extra-hovered-text-color: #c0e836;
+  --light-extra-hovered-text-color: orange;
   --light-attent-bg-color: #c0e836;
   --light-attent-text-color: black;
 
@@ -18,7 +18,7 @@
   --dark-extra-bg-color: #151515;
   --dark-extra-border-color: white;
   --dark-extra-text-color: white;
-  --dark-extra-hovered-text-color: orange;
+  --dark-extra-hovered-text-color: #c0e836;
   --dark-attent-bg-color: orange;
   --dark-attent-text-color: black;
 
