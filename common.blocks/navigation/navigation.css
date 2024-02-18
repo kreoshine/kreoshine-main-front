@@ -11,7 +11,7 @@
   height: 3rem;
 }
 
-.navigation__box {
+.navigation__link-box {
   flex: 1 1 auto;
   display: flex;
   justify-content: center;
