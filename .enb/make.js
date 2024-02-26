@@ -48,7 +48,7 @@ const techs = {
 module.exports = function(config) {
     const isProd = process.env.YENV === 'production';
 
-    config.nodes('bundles/*', function(nodeConfig) {
+    config.nodes('bundles/*/*', function(nodeConfig) {
         nodeConfig.addTechs([
             // essential
             [enbBemTechs.levels, { levels: levels }],
