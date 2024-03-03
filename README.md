@@ -28,7 +28,8 @@ and subdirectories have simplified names
 there will be `components/common` and `design/common` respectively)
 
 3. ### `design`
-Current directory defines the theme (color, text size, fonts, etc.) and should contain mostly CSS
+Current directory defines the theme (color, text size, fonts, etc.)
+and should contain mostly CSS
 
 4. ### `components/lib`
 This directory is created for **overriding library blocks**

@@ -9,9 +9,9 @@
         // common
         { block: 'main-contacts' },
         { block: 'navigation' },
-        { block: 'theme-switcher' },
 
         // design
+        { block: 'theme-switcher' },
         { block: 'header', mod: 'theme' },
     ],
 })
