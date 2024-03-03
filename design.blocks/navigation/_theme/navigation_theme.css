@@ -1,13 +1,6 @@
-.navigation_theme {
-  background-color: var(--extra-bg-color);
-}
-
 .navigation_theme .navigation__box {
+  background-color: var(--extra-bg-color);
   border-right: var(--extra-border-color) 1px solid;
-}
-
-.navigation_theme .navigation__box:last-child {
-  border-right: none;
 }
 
 .navigation_theme .navigation__link {
@@ -20,3 +13,7 @@
 .navigation_theme .navigation__link:hover {
   color: var(--extra-hovered-text-color);
 }
+
+/*.navigation_theme .navigation__home-box:hover {*/
+/*  background-color: var(--extra-bg-color);*/
+/*}*/

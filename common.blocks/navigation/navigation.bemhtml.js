@@ -5,8 +5,23 @@ block('navigation').mods()(
 block('navigation').content()(function() {
   return [
     {
+      elem: 'box',
+      content: {
+        block: 'link',
+        mix: [{block: 'navigation', elem: 'home-box'}],
+        url: '/',
+        content: {
+          block: 'image',
+          alt: 'Главная',
+          title: 'Главная',
+          mix: [{block: 'navigation', elem: 'logo'}],
+          url: '/static/images/logo.svg',
+        }
+      },
+    },
+    {
         elem: 'box',
-        mix: [{block: 'navigation', elem: 'box'}],
+        mix: [{block: 'navigation', elem: 'link-box'}],
         content: {
             block: 'link',
             mix: [{block: 'navigation', elem: 'link'}],
@@ -17,7 +32,7 @@ block('navigation').content()(function() {
     },
     {
         elem: 'box',
-        mix: [{block: 'navigation', elem: 'box'}],
+        mix: [{block: 'navigation', elem: 'link-box'}],
         content: {
             block: 'link',
             mix: [{block: 'navigation', elem: 'link'}],
@@ -28,7 +43,7 @@ block('navigation').content()(function() {
     },
     {
         elem: 'box',
-        mix: [{block: 'navigation', elem: 'box'}],
+        mix: [{block: 'navigation', elem: 'link-box'}],
         content: {
             block: 'link',
             mix: [{block: 'navigation', elem: 'link'}],

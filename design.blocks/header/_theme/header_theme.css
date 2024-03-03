@@ -1,3 +1,15 @@
+.header {
+  background: var(--extra-bg-color);
+}
+
 .header_theme {
   box-shadow: 0 1vh 1vw darkgrey;
+}
+
+.header__icon {
+  border-radius: 50%;
+}
+
+.header__bar {
+  background-color: var(--extra-bg-color);
 }
