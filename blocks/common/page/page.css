@@ -8,11 +8,7 @@
 }
 
 .page__inner {
-  width: 100vw;
-  @media (min-width: 780px) {
-    width: 80vw;
-  }
-  margin: 1px 0 0 0;
+  margin-top: 1px;
   display: flex;
   flex-direction: column;
 }

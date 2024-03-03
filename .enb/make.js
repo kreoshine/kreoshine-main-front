@@ -51,7 +51,10 @@ module.exports = function(config) {
     config.nodes('bundles/desktop/*', function(nodeConfig) {
         nodeConfig.addTechs([
             [enbBemTechs.levels, {
-                levels: JSON.parse(JSON.stringify(common_levels))
+                levels: JSON.parse(JSON.stringify(common_levels)).concat([
+                    // copy of common levels with the new ones
+                    { path: 'blocks/desktop' },
+                ])
             }],
         ])
     });
@@ -59,7 +62,10 @@ module.exports = function(config) {
     config.nodes('bundles/mobile/*', function(nodeConfig) {
         nodeConfig.addTechs([
             [enbBemTechs.levels, {
-                 levels: JSON.parse(JSON.stringify(common_levels))
+                 levels: JSON.parse(JSON.stringify(common_levels)).concat([
+                    // copy of common levels with the new ones
+                    { path: 'blocks/mobile' },
+                ])
             }],
         ])
     });

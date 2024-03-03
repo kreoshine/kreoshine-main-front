@@ -1,8 +1,5 @@
 .navigation {
   display: flex;
-  @media (min-width: 780px) {
-      flex-wrap: nowrap;
-  }
   justify-content: space-between;
 }
 
