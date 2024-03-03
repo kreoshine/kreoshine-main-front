@@ -34,9 +34,6 @@ and should contain mostly CSS
 4. ### `components/lib`
 This directory is created for **overriding library blocks**
 
-5. ### `components/var`
-Specifies the **definition of CSS variables** that are used in the project
-
 ### Installation
 
 1. Clone the repository.
