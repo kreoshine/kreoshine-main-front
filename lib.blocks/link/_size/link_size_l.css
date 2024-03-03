@@ -1,9 +1,0 @@
-.link_size_l {
-    font-size: 18px;
-    @media (min-width: 780px) {
-        font-size: 21px;
-    }
-    @media (min-width: 1720px) {
-        font-size: 27px;
-    }
-}

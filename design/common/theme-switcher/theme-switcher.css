@@ -1,0 +1,36 @@
+.theme-switcher {
+  background: var(--extra-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.theme-switcher__icon-wrapper {
+  position: relative;
+  transition: all 360ms ease-out;
+  /* provides real size of the block */
+  height: 2rem;
+  width: 2rem;
+}
+
+.theme-switcher__icon-holder {
+  overflow: hidden;
+}
+
+.theme-switcher_theme_light .theme-switcher__icon-holder .theme-switcher__icon-wrapper{
+  top: 0;
+}
+
+.theme-switcher_theme_dark .theme-switcher__icon-holder .theme-switcher__icon-wrapper{
+  top: -2rem;
+}
+
+.theme-switcher__icon {
+  height: 2rem;
+  width: 2rem;
+}

@@ -42,7 +42,9 @@ const builder = Builder({
         'node_modules/bem-components/desktop.blocks',
         'node_modules/bem-components/design/common.blocks',
         'node_modules/bem-components/design/desktop.blocks',
-        'common.blocks',
+        'blocks/common',
+        'blocks/desktop',
+        'blocks/mobile',
     ],
     techMap: {
         bemhtml: ['bemhtml.js'],
@@ -52,7 +54,7 @@ const builder = Builder({
 });
 
 gulp.task('build', () => {
-    return bundler('*.bundles/*')
+    return bundler('*.bundles/*/*')
         .pipe(builder({
             // cssdeps: bundle => bundle.src('css', {deps: true})
             //     .pipe(concat(bundle.name + '.css.deps.js')),

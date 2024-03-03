@@ -2,8 +2,11 @@ module.exports = {
     root: true,
 
     levels: {
-        'common.blocks': {},
-        'desktop.bundles': {}
+        'components/common': {},
+        'components/desktop': {},
+        'components/mobile': {},
+        'bundles/desktop': {},
+        'bundles/mobile': {}
     },
 
     modules: {
@@ -13,16 +16,31 @@ module.exports = {
                     templates: {
                         'bemjson.js': '.bem/templates/bemjson.js',
                     },
-                    techs: ['css', 'js'],
                     levels: {
-                        'desktop.bundles': {
+                        'bundles/desktop': {
                             techs: [
                                 'bemjson.js',
                             ],
                         },
-                        'common.blocks': {
-                            default: true
-                        }
+                        'bundles/mobile': {
+                            techs: [
+                                'bemjson.js',
+                            ],
+                        },
+                        'components/common': {
+                            default: true,
+                            techs: ['css', 'bemhtml.js', 'js'],
+                        },
+                        'components/desktop': {
+                            default: true,
+                            techs: ['css'],
+
+                        },
+                        'components/mobile': {
+                            default: true,
+                            techs: ['css'],
+                        },
+
                     }
                 }
             }
