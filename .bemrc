@@ -2,9 +2,9 @@ module.exports = {
     root: true,
 
     levels: {
-        'blocks/common': {},
-        'blocks/desktop': {},
-        'blocks/mobile': {},
+        'components/common': {},
+        'components/desktop': {},
+        'components/mobile': {},
         'bundles/desktop': {},
         'bundles/mobile': {}
     },
@@ -27,16 +27,16 @@ module.exports = {
                                 'bemjson.js',
                             ],
                         },
-                        'blocks/common': {
+                        'components/common': {
                             default: true,
                             techs: ['css', 'bemhtml.js', 'js'],
                         },
-                        'blocks/desktop': {
+                        'components/desktop': {
                             default: true,
                             techs: ['css'],
 
                         },
-                        'blocks/mobile': {
+                        'components/mobile': {
                             default: true,
                             techs: ['css'],
                         },

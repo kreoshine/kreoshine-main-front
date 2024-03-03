@@ -1,28 +1,40 @@
 ## kreoshine-main-front
 
-### Description
-Node JS application for creation static files (.html/.css/.js) based on
+Node JS application for creation static files (.html/.css/.js)
+
+Current project is based on
 - [BEM methodology](https://en.bem.info/methodology/)
 - [**BEM classic stack**](https://en.bem.info/technologies/classic/)
 
-There are two type of **bundles** _(build files)_ for different devices:
+### Project structure
+The current project has some changes in the file structure relative to the default one:
+
+1. ### `bundles`
+Contains files that will be used for the build.
+There are two types of **builds** for different devices:
 - **desktop**
 - **mobile**
 
-#### _Project structure_
-The current project has some changes in the file structure relative to the default one:
-- bundles are grouped into the appropriate directory and subdirectories have simplified names
+Bundles are grouped into the appropriate directory
+and subdirectories for the build type have simplified names
+(e.g. instead of `desktop.bundles` there will be `bundles/desktop`)
 
-  (e.g. instead of `desktop.bundles`
-  there will be `bundles/desktop`)
+2. ### `components`
+Current directory is responsible for the basic definition of the blocks
 
-- blocks are grouped into the appropriate directory and subdirectories have simplified names
+Blocks are grouped into the appropriate directories with own names
+and subdirectories have simplified names
+(e.g. instead of `common.blocks` and `design/common.blocks`
+there will be `components/common` and `design/common` respectively)
 
-  (e.g. instead of `desktop.blocks` and `design/desktop.blocks`
-  there will be `blocks/desktop` and `blocks/design/desktop` respectively)
+3. ### `design`
+Current directory defines the theme (color, text size, fonts, etc.) and should contain mostly CSS
 
-- `blocks/lib` contains blocks for **overriding library blocks**
-- `blocks/var` contains the **definition of CSS variables** that are used in the project
+4. ### `components/lib`
+This directory is created for **overriding library blocks**
+
+5. ### `components/var`
+Specifies the **definition of CSS variables** that are used in the project
 
 ### Installation
 
