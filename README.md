@@ -31,7 +31,7 @@ there will be `components/common` and `design/common` respectively)
 Current directory defines the theme (color, text size, fonts, etc.)
 and should contain mostly CSS
 
-4. ### `components/lib`
+4. ### `lib`
 This directory is created for **overriding library blocks**
 
 ### Installation
