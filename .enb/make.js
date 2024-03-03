@@ -39,10 +39,10 @@ const techs = {
         { path: 'node_modules/bem-components/desktop.blocks', check: false },
         // { path: 'node_modules/bem-components/design/common.blocks', check: false },
         // { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
-        'var.blocks',
-        'lib.blocks',
-        'common.blocks',
-        'design.blocks',
+        { path: 'blocks/var' },
+        { path: 'blocks/lib' },
+        { path: 'blocks/common' },
+        { path: 'blocks/design' },
     ];
 
 module.exports = function(config) {
