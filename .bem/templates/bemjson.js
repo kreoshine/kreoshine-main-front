@@ -6,8 +6,8 @@ module.exports = function (entity, naming) {
     return [
         "module.exports = {",
         "    block: 'page',",
-        "    title: 'Page " + entity.block + "',",
-        "    favicon: '/favicon.ico',",
+        "    title: 'KreoShine | " + entity.block + "',",
+        "    favicon: '/static/favicon.ico',",
         "    head: [",
         "        { elem: 'meta', attrs: { name: 'description', content: '' } },",
         "        { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },",
@@ -15,7 +15,11 @@ module.exports = function (entity, naming) {
         "    ],",
         "    scripts: [{ elem: 'js', url: '" + entity.block + ".min.js' }],",
         "    mods: { theme: 'islands' },",
-        "    content: []",
+        "    content: [",
+        "        {",
+        "            block: 'header',",
+        "        }",
+        "    ]",
         "};",
         ""
     ].join(EOL);

@@ -47,18 +47,21 @@ export PATH=./node_modules/.bin:$PATH
 #### Some useful command:
 
 - ###### start the development server
-(_note_: by default on port 8080, add `-- --port=8181` to the command for another port usage)
+_note_: by default on port 8080, add `-- --port=8181` to the command for another port usage
 ```bash
 npm start
 ```
 
 
 - ###### create new blocks
-(_note:_ settings from `.bemrc` will be used)
+_note:_ settings from `.bemrc` will be used
 ```bash
 bem create new-block
 ```
 see [bem-tools-create](https://github.com/bem-tools/bem-tools-create/blob/master/README.md) for more info)
 
 - ###### create new pages
-create them manually for each bundle's groups with `.bemhtml.js` extension
+_note:_ template from `.bem/templates/bemjson.js` will be used (but create a new page for each build type: desktop, mobile, etc.)
+```bash
+bem create -b new-page -l bundles/desktop -t bemjson.js
+```

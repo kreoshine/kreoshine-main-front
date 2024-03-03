@@ -5,7 +5,8 @@ module.exports = {
         'blocks/common': {},
         'blocks/desktop': {},
         'blocks/mobile': {},
-        'desktop.bundles': {}
+        'bundles/desktop': {},
+        'bundles/mobile': {}
     },
 
     modules: {
@@ -16,7 +17,12 @@ module.exports = {
                         'bemjson.js': '.bem/templates/bemjson.js',
                     },
                     levels: {
-                        'desktop.bundles': {
+                        'bundles/desktop': {
+                            techs: [
+                                'bemjson.js',
+                            ],
+                        },
+                        'bundles/mobile': {
                             techs: [
                                 'bemjson.js',
                             ],
