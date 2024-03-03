@@ -43,7 +43,6 @@ const builder = Builder({
         'node_modules/bem-components/design/common.blocks',
         'node_modules/bem-components/design/desktop.blocks',
         'common.blocks',
-        'desktop.blocks'
     ],
     techMap: {
         bemhtml: ['bemhtml.js'],

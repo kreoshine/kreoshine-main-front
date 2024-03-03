@@ -1,11 +1,11 @@
-.header__layout {
+.header {
   display: flex;
   flex-direction: column;
   @media (min-width: 780px) {
+      min-height: 6vw;
       display: inline-grid;
-      grid-template-columns: auto 5fr 2fr;
-      justify-content: stretch;
-      align-content: stretch;
+      grid-template-columns: auto 5fr 2fr auto;
+      align-items: center;
   }
 }
 

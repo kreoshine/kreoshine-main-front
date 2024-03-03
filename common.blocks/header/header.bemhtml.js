@@ -1,5 +1,8 @@
 block('header')(
   tag()('header'),
+  mods()(
+    {'theme': true}
+  ),
   content()(function() {
     return [
       {
@@ -13,11 +16,19 @@ block('header')(
       },
       {
         block: 'navigation',
+        mods: {'theme': true}
       },
       {
         block: 'main-contacts',
       },
+      {
+          elem: 'bar',
+          content: [
+              {
+                  block: 'theme-switcher',
+              },
+          ]
+      },
     ];
   }),
-  addMix()({ elem : 'layout' }),
 );

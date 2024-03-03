@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "HelveticaUltraLightItalic";
+  src: local("HelveticaUltraLightItalic"), url("/static/fonts/HelveticaUltraLightItalic.ttf");
+}
+
+.page_theme {
+  font: 13px Helvetica;
+  color: var(--main-text-color);
+  background: var(--main-bg-color);
+  @media (min-width: 780px) {
+    background: linear-gradient(
+      to right,
+      var(--side-gradient-main-bg-color),
+      var(--main-bg-color) 10vw,
+      var(--main-bg-color) 90vw,
+      var(--side-gradient-main-bg-color)
+    );
+  }
+}
