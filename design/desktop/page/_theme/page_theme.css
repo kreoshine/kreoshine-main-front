@@ -1,0 +1,9 @@
+.page_theme {
+  background: linear-gradient(
+    to right,
+    var(--side-gradient-main-bg-color),
+    var(--main-bg-color) 10vw,
+    var(--main-bg-color) 90vw,
+    var(--side-gradient-main-bg-color)
+  );
+}

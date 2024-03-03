@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "HelveticaUltraLightItalic";
+  src: local("HelveticaUltraLightItalic"), url("/static/fonts/HelveticaUltraLightItalic.ttf");
+}
+
+.page_theme {
+  font: 13px Helvetica;
+  color: var(--main-text-color);
+  background: var(--main-bg-color);
+}
