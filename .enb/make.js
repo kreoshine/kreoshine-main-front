@@ -42,7 +42,7 @@ const techs = {
         { path: 'blocks/vars' },
         { path: 'blocks/lib' },
         { path: 'blocks/common' },
-        { path: 'blocks/design' },
+        { path: 'blocks/design/common' },
     ];
 
 module.exports = function(config) {
@@ -53,6 +53,7 @@ module.exports = function(config) {
             [enbBemTechs.levels, {
                 levels: JSON.parse(JSON.stringify(common_levels)).concat([
                     // copy of common levels with the new ones
+                    { path: 'blocks/design/desktop' },
                     { path: 'blocks/desktop' },
                 ])
             }],
