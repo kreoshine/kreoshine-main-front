@@ -1,9 +1,13 @@
 .link_size_m {
-    font-size: 15px;
-    @media (min-width: 780px) {
-        font-size: 18px;
-    }
-    @media (min-width: 1720px) {
-        font-size: 30px;
-    }
+  font-size: 15px;
+}
+@media (min-width: 780px) {
+  .link_size_m {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1720px) {
+  .link_size_m {
+      font-size: 30px;
+  }
 }
