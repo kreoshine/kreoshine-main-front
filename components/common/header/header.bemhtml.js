@@ -1,8 +1,5 @@
 block('header')(
   tag()('header'),
-  mods()(
-    {'theme': true}
-  ),
   content()(function() {
     return [
       {
