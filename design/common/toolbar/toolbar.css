@@ -1,0 +1,22 @@
+.toolbar__button {
+  background: var(--extra-bg-color);
+  padding: 0.2rem;
+  border: 0;
+}
+
+.toolbar__menu {
+  background: var(--extra-bg-color);
+}
+
+.toolbar__icon-wrapper {
+  border-radius: 50%;
+  margin: 0.2rem;
+  padding: 0;
+  border: 0;
+}
+
+.toolbar__icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem;
+}
