@@ -4,7 +4,6 @@
 }
 
 .navigation_theme .navigation__link {
-  text-decoration: none;
   white-space: nowrap;
   padding: 1vh;
   color: var(--extra-text-color);
