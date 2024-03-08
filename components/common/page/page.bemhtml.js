@@ -4,7 +4,3 @@ block('page').content()(function() {
     content: applyNext()
   };
 });
-
-block('page').mods()(
-  {'theme': true}
-);

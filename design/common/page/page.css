@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "HelveticaUltraLightItalic";
+  src: local("HelveticaUltraLightItalic"), url("/static/fonts/HelveticaUltraLightItalic.ttf");
+}
+
+.page {
+  font: 13px Helvetica;
+  color: var(--main-text-color);
+  background: var(--main-bg-color);
+}
+
 :root {
   /* light theme colors */
   --light-main-bg-color: white;
