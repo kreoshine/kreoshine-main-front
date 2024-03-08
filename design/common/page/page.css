@@ -6,7 +6,6 @@
 .page {
   font: 13px Helvetica;
   color: var(--main-text-color);
-  background: var(--main-bg-color);
 }
 
 :root {
