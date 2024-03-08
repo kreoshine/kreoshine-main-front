@@ -2,11 +2,11 @@
   background: var(--extra-bg-color);
   padding: 0.2rem;
   border-radius: 15%;
-  border: 1px solid var(--extra-bg-color);
+  border: 0.1rem solid var(--extra-bg-color);
 }
 
 .toolbar__button:hover {
-  border: 1px solid var(--main-bg-color);
+  border: 0.1rem solid var(--main-bg-color);
 }
 
 .toolbar__button:active {
