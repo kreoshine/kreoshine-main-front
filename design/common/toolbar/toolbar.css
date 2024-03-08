@@ -9,6 +9,10 @@
   border: 1px solid var(--main-bg-color);
 }
 
+.toolbar__button:active {
+  transform: scale(0.95);
+}
+
 .toolbar__menu {
   border: 1px solid var(--extra-bg-color);
   background: var(--extra-bg-color);

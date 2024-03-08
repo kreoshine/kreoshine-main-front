@@ -21,7 +21,10 @@ block('navigation').content()(function() {
       content: [
         {
           block: 'link',
-          mix: [{block: 'navigation', elem: 'home-link'}],
+          mix: [
+            {block: 'navigation', elem: 'link'},
+            {block: 'navigation', elem: 'home-link'},
+          ],
           url: '/',
           content: {
             block: 'image',

@@ -14,6 +14,10 @@
   border: 1px solid var(--main-bg-color);
 }
 
+.navigation__button:active {
+  transform: scale(0.95);
+}
+
 .navigation__logo {
   height: 5rem;
 }
@@ -27,6 +31,10 @@
 
 .navigation__link:hover {
   color: var(--extra-hovered-text-color);
+}
+
+.navigation__link:active {
+  transform: scale(1.05);
 }
 
 .navigation__home-link:hover {
