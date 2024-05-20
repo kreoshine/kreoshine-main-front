@@ -1,0 +1,32 @@
+.toolbar__button {
+  background: var(--extra-bg-color);
+  padding: 0.2rem;
+  border-radius: 15%;
+  border: 0.1rem solid var(--extra-bg-color);
+}
+
+.toolbar__button:hover {
+  border: 0.1rem solid var(--main-bg-color);
+}
+
+.toolbar__button:active {
+  transform: scale(0.95);
+}
+
+.toolbar__menu {
+  border: 1px solid var(--extra-bg-color);
+  background: var(--extra-bg-color);
+}
+
+.toolbar__icon-wrapper {
+  border-radius: 50%;
+  margin: 0.2rem;
+  padding: 0;
+  border: 0;
+}
+
+.toolbar__icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem;
+}

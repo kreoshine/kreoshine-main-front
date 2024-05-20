@@ -37,8 +37,8 @@ const techs = {
         { path: 'node_modules/bem-core/desktop.blocks', check: false },
         { path: 'node_modules/bem-components/common.blocks', check: false },
         { path: 'node_modules/bem-components/desktop.blocks', check: false },
-        // { path: 'node_modules/bem-components/design/common.blocks', check: false },
-        // { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
+        { path: 'node_modules/bem-components/design/common.blocks', check: false },
+        { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
         { path: 'lib' },
         { path: 'components/common' },
         { path: 'design/common' },
@@ -65,6 +65,7 @@ module.exports = function(config) {
                  levels: JSON.parse(JSON.stringify(common_levels)).concat([
                     // copy of common levels with the new ones
                     { path: 'components/mobile' },
+                    { path: 'design/mobile' },
                 ])
             }],
         ])

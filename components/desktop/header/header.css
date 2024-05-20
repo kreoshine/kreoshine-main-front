@@ -1,5 +1,4 @@
 .header {
-  display: inline-grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
 }
