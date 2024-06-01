@@ -55,6 +55,7 @@ module.exports = function(config) {
                 levels: JSON.parse(JSON.stringify(common_levels)).concat([
                     // copy of common levels with the new ones
                     { path: 'components/desktop' },
+                    { path: 'components/desktop/index' },
                     { path: 'design/desktop' },
                 ])
             }],

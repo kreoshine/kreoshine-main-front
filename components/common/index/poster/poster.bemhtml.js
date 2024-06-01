@@ -1,5 +1,4 @@
 block('poster')(
-  addMix()([{ block : 'dosed' }]),
   content()(function() {
     return [
       {
