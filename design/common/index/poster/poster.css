@@ -1,0 +1,5 @@
+.poster__description {
+  text-align: center;
+  /* should be same type (vh) as poster__image */
+  font-size: 4vh;
+}

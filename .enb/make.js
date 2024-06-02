@@ -41,7 +41,9 @@ const techs = {
         { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
         { path: 'lib' },
         { path: 'components/common' },
+        { path: 'components/common/index' },
         { path: 'design/common' },
+        { path: 'design/common/index' },
     ];
 
 module.exports = function(config) {
@@ -53,6 +55,7 @@ module.exports = function(config) {
                 levels: JSON.parse(JSON.stringify(common_levels)).concat([
                     // copy of common levels with the new ones
                     { path: 'components/desktop' },
+                    { path: 'components/desktop/index' },
                     { path: 'design/desktop' },
                 ])
             }],

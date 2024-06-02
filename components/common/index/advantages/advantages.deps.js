@@ -1,0 +1,6 @@
+({
+    shouldDeps: [
+        // lib
+        { block: 'icon' },
+    ],
+})

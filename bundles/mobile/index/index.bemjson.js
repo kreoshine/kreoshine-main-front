@@ -12,7 +12,9 @@ module.exports = {
         {
             block: 'header',
         },
-
+        {
+            block: 'index',
+        },
         {
             block: 'footer-layout',
             tag: 'footer',

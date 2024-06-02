@@ -1,11 +1,10 @@
 .header {
   /* 2rem + 2*0.2rem + 2*0.1rem + 2*0.2rem icon in button */
   /* icon size + header padding + button border + button padding  */
-  /*height: 3rem;*/
+  /*height: var(--header-height-size);*/
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding: 0.2rem 1rem;
 }

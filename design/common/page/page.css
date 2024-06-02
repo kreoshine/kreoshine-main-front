@@ -3,13 +3,23 @@
   src: local("HelveticaUltraLightItalic"), url("/static/fonts/HelveticaUltraLightItalic.ttf");
 }
 
+@font-face {
+  font-family: "MICRADI";
+  src: local("Micradi"), url("/static/fonts/MICRADI.ttf");
+}
+
 .page {
   font: 13px Helvetica;
   color: var(--main-text-color);
 }
 
 :root {
+  /* sizes */
+  --header-height-size: 3rem;
+  --content-height-size: calc(100vh - var(--header-height-size));
+
   /* light theme colors */
+  --light-header-bg-color: #92ae2b;
   --light-main-bg-color: white;
   --light-side-gradient-main-bg-color: #e1e1e1;
   --light-main-text-color: black;
@@ -17,10 +27,11 @@
   --light-extra-border-color: #282828;
   --light-extra-text-color: black;
   --light-extra-hovered-text-color: orange;
-  --light-attent-bg-color: #c0e836;
+  --light-attent-bg-color: #a5d015;
   --light-attent-text-color: black;
 
   /*  dark theme colors */
+  --dark-header-bg-color: #dc890b;
   --dark-main-bg-color: #282828;
   --dark-side-gradient-main-bg-color: #3a3a3a;
   --dark-main-text-color: white;
@@ -32,6 +43,7 @@
   --dark-attent-text-color: black;
 
   /* var bellow should be used in CSS */
+  --main-header-bg-color: var(--light-header-bg-color);
   --main-bg-color: var(--light-main-bg-color);
   --side-gradient-main-bg-color: var(--light-side-gradient-main-bg-color);
   --main-text-color: var(--light-main-text-color);
