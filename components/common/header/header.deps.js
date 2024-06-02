@@ -1,7 +1,7 @@
 ({
     block: 'header',
     shouldDeps: [
-        // common
+        // custom
         { block: 'toolbar' },
         { block: 'navigation' },
     ],

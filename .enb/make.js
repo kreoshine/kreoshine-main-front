@@ -41,8 +41,10 @@ const techs = {
         { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
         { path: 'lib' },
         { path: 'components/common' },
+        { path: 'components/common/header' },
         { path: 'components/common/index' },
         { path: 'design/common' },
+        { path: 'design/common/header' },
         { path: 'design/common/index' },
     ];
 
