@@ -1,5 +1,5 @@
 .toolbar__button {
-  border: 0.1rem solid var(--main-header-bg-color);
+  border: 0.1rem solid var(--header-bg-color);
 }
 
 .toolbar__button:hover {

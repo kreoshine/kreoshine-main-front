@@ -5,7 +5,7 @@ provide(bemDom.declBlock(this.name, {
 
     _changeTheme: function(val) {
         document.documentElement.style.setProperty(
-            '--main-header-bg-color', `var(--${val}-header-bg-color)`
+            '--header-bg-color', `var(--${val}-header-bg-color)`
         );
         document.documentElement.style.setProperty(
             '--main-bg-color', `var(--${val}-main-bg-color)`

@@ -43,7 +43,7 @@
   --dark-attent-text-color: black;
 
   /* var bellow should be used in CSS */
-  --main-header-bg-color: var(--light-header-bg-color);
+  --header-bg-color: var(--light-header-bg-color);
   --main-bg-color: var(--light-main-bg-color);
   --side-gradient-main-bg-color: var(--light-side-gradient-main-bg-color);
   --main-text-color: var(--light-main-text-color);

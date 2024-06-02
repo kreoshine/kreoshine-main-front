@@ -1,5 +1,5 @@
 .navigation {
-  background: var(--main-header-bg-color);
+  background: var(--header-bg-color);
 }
 
 .navigation__button {

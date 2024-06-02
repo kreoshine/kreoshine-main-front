@@ -1,5 +1,5 @@
 .toolbar__button {
-  background: var(--main-header-bg-color);
+  background: var(--header-bg-color);
   padding: 0.2rem;
   border-radius: 15%;
 }
