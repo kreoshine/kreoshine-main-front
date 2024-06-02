@@ -2,7 +2,6 @@
   background: var(--main-header-bg-color);
   padding: 0.2rem;
   border-radius: 15%;
-  /*box-shadow: 0 1px 1px yellowgreen;*/
 }
 
 .toolbar__button:active {
