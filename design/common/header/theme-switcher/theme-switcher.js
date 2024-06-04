@@ -8,6 +8,9 @@ provide(bemDom.declBlock(this.name, {
             '--header-bg-color', `var(--${val}-header-bg-color)`
         );
         document.documentElement.style.setProperty(
+            '--header-text-color', `var(--${val}-header-text-color)`
+        );
+        document.documentElement.style.setProperty(
             '--main-bg-color', `var(--${val}-main-bg-color)`
         );
         document.documentElement.style.setProperty(

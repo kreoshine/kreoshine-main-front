@@ -20,6 +20,7 @@
 
   /* light theme colors */
   --light-header-bg-color: #a5d015;
+  --light-header-text-color: black;
   --light-main-bg-color: white;
   --light-side-gradient-main-bg-color: #e1e1e1;
   --light-main-text-color: black;
@@ -32,6 +33,7 @@
 
   /*  dark theme colors */
   --dark-header-bg-color: orange;
+  /*--dark-header-text-color: defined separately;*/
   --dark-main-bg-color: #282828;
   --dark-side-gradient-main-bg-color: #3a3a3a;
   --dark-main-text-color: white;
@@ -44,6 +46,7 @@
 
   /* var bellow should be used in CSS */
   --header-bg-color: var(--light-header-bg-color);
+  --header-text-color: var(--light-header-text-color);
   --main-bg-color: var(--light-main-bg-color);
   --side-gradient-main-bg-color: var(--light-side-gradient-main-bg-color);
   --main-text-color: var(--light-main-text-color);

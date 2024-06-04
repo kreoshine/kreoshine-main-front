@@ -22,7 +22,7 @@
   white-space: nowrap;
   padding: 0.2rem;
   margin: 0.2rem;
-  color: var(--extra-text-color);
+  color: var(--header-text-color);
 }
 
 .navigation__link:hover {
