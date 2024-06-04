@@ -1,7 +1,5 @@
 .toolbar__button {
   background: var(--header-bg-color);
-  padding: 0.2rem;
-  border-radius: 15%;
 }
 
 .toolbar__button:active {
@@ -11,17 +9,4 @@
 .toolbar__menu {
   border: 1px solid var(--extra-bg-color);
   background: var(--extra-bg-color);
-}
-
-.toolbar__icon-wrapper {
-  border-radius: 50%;
-  margin: 0.2rem;
-  padding: 0;
-  border: 0;
-}
-
-.toolbar__icon {
-  width: 2rem;
-  height: 2rem;
-  padding: 0.2rem;
 }
