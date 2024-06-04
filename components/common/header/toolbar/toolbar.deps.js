@@ -2,13 +2,6 @@
     block: 'header',
     shouldDeps: [
         // lib
-        // {
-        //     block: 'link',
-        //     mods: {
-        //         pseudo: true,
-        //         theme: 'island',
-        //     }
-        // },
         {
             block: 'dropdown',
             mods: {
@@ -17,14 +10,6 @@
                 // size: 'm'
             }
         },
-        // {
-        //     block: 'popup',
-        //     mods: {
-        //         theme: 'islands',
-        //         target: 'anchor',
-        //         autoclosable: true
-        //     }
-        // },
         { block: 'menu' },
         { block: 'icon' },
         { block: 'button', mods: { type: 'link'} },

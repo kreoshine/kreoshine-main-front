@@ -1,0 +1,11 @@
+.navigation {
+  flex-grow: 1;
+}
+
+.navigation__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}

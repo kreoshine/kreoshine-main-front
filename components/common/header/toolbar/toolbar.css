@@ -1,0 +1,24 @@
+.toolbar__button {
+  padding: 0.2rem;
+  border-radius: 15%;
+}
+
+.toolbar__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.toolbar__icon-wrapper {
+  border-radius: 50%;
+  margin: 0.2rem;
+  padding: 0;
+  border: 0;
+}
+
+.toolbar__icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem;
+}

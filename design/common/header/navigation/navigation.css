@@ -1,10 +1,6 @@
-.navigation__menu {
-  border: 1px solid var(--extra-bg-color);
-  background-color: var(--extra-bg-color);
-}
 
 .navigation__button {
-  background: var(--main-header-bg-color);
+  background: var(--header-bg-color);
   padding: 0.2rem;
   border-radius: 15%;
   /*box-shadow: 0 1px 1px yellowgreen;*/
@@ -26,7 +22,7 @@
   white-space: nowrap;
   padding: 0.2rem;
   margin: 0.2rem;
-  color: var(--extra-text-color);
+  color: var(--header-text-color);
 }
 
 .navigation__link:hover {

@@ -43,6 +43,7 @@ const techs = {
         { path: 'components/common' },
         { path: 'components/common/index' },
         { path: 'design/common' },
+        { path: 'design/common/header' },
         { path: 'design/common/index' },
     ];
 
@@ -55,7 +56,9 @@ module.exports = function(config) {
                 levels: JSON.parse(JSON.stringify(common_levels)).concat([
                     // copy of common levels with the new ones
                     { path: 'components/desktop' },
+                    { path: 'components/desktop/header' },
                     { path: 'components/desktop/index' },
+                    { path: 'design/desktop/header' },
                     { path: 'design/desktop' },
                 ])
             }],
@@ -68,6 +71,8 @@ module.exports = function(config) {
                  levels: JSON.parse(JSON.stringify(common_levels)).concat([
                     // copy of common levels with the new ones
                     { path: 'components/mobile' },
+                    { path: 'components/mobile/header' },
+                    { path: 'design/mobile/header' },
                     { path: 'design/mobile' },
                 ])
             }],

@@ -18,3 +18,7 @@
   min-width: 500px;
   background-color: var(--main-bg-color);
 }
+
+:root {
+  --dark-header-text-color: black;
+}
