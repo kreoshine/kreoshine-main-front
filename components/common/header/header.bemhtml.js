@@ -6,7 +6,7 @@ block('header')(
         block: 'navigation',
       },
       {
-        block: 'toolbar',
+        block: 'theme-switcher',
       },
     ];
   }),

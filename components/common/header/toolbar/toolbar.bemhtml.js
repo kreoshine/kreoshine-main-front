@@ -47,19 +47,5 @@ block('toolbar')(
 				]
 			}
 		}
-			// {
-			// 	block: 'link',
-			// 	mods: {
-			// 			pseudo: true,
-			// 			theme: 'islands'
-			// 	},
-			// 	content: 'open islands popup with content interaction'
-			// },
-			// {
-			// 	block: 'popup',
-			// 	mods : { theme: 'islands', target : 'anchor', autoclosable: true },
-			// 	// directions : ['bottom-left'],
-
-		// ]
 	})
 );

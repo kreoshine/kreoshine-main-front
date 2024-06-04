@@ -10,7 +10,7 @@ block('navigation').content()(function() {
       mix: { block: 'navigation', elem: 'button' },
       icon: {
         block: 'icon',
-        mix: { block: 'toolbar', elem: 'icon' },
+        mix: { block: 'navigation', elem: 'icon' },
         url: '/static/images/icons/navigation.svg',
       }
     },
