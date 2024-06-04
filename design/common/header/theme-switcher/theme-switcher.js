@@ -1,5 +1,14 @@
-modules.define('theme-switcher', ['i-bem-dom',], function(provide, bemDom) {
+modules.define('theme-switcher', ['i-bem-dom'], function(provide, bemDom) {
 
+const localStorageThemeKey = 'kreoshine:theme'
+
+function _getLocalStorageThemeValue() {
+    return localStorage.getItem(localStorageThemeKey);
+}
+
+function _setLocalStorageThemeValue(theme) {
+    localStorage.setItem(localStorageThemeKey, theme);
+}
 
 provide(bemDom.declBlock(this.name, {
 
@@ -43,15 +52,25 @@ provide(bemDom.declBlock(this.name, {
     _onClick: function() {
         if(this.hasMod('theme', 'dark')) {
             this.setMod('theme', 'light');
+            _setLocalStorageThemeValue('light')
         }
         else {
             this.setMod('theme', 'dark');
+            _setLocalStorageThemeValue('dark')
         }
     },
 
     _getDefaultTheme: function() {
-        // todo: get from the LocalStorage
-        return 'light';
+        try {
+            const theme_value = _getLocalStorageThemeValue();
+            if (!theme_value) {
+                return 'light';
+            }
+            return theme_value
+        } catch (e) {
+            console.log(e)
+            return 'light';
+        }
     },
 
     onSetMod: {
@@ -81,6 +100,7 @@ provide(bemDom.declBlock(this.name, {
     //         'click',
     //         this.prototype._onClick);  // в момент клика будет создан экземпляр блока и вызван его метод _onClick
     // },
-}));
+},
+));
 
 });
