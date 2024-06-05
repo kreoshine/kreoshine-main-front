@@ -6,6 +6,12 @@ Current project is based on
 - [BEM methodology](https://en.bem.info/methodology/)
 - [**BEM classic stack**](https://en.bem.info/technologies/classic/)
 
+#### Supported environment:
+- nodejs v14.21.3
+- npm v6.14.18
+
+Other versions may not be supported
+
 ### Project structure
 The current project has some changes in the file structure relative to the default one:
 
