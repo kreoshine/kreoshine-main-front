@@ -10,7 +10,7 @@
   justify-content: space-evenly;
 }
 
-.advantages__main-title {
+.advantages__title {
   text-align: center;
   margin: 1rem 0 2rem;
 }
@@ -29,29 +29,4 @@
   margin-top: 1rem;
   display: flex;
   justify-content: center;
-}
-
-.advantages__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-
-  width: 90%;
-
-  text-align: center;
-}
-
-.advantages__icon-wrapper {
-  height: 5rem;
-  width: 5rem;
-}
-
-.advantages__icon {
-  height: 100%;
-  width: 100%;
-}
-
-.advantages__title {
-  margin: 1rem 0 0;
 }
