@@ -1,0 +1,16 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.product-card__title {
+  text-align: center;
+}
+
+.product-card__image {
+  width: 100px;
+  /* fixme: image size and outer container */
+}
