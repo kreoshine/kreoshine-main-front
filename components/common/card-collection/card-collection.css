@@ -1,0 +1,23 @@
+.card-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 500px) {
+  .card-collection__item {
+    flex-basis: 50%;
+  }
+}
+
+.card-collection__item {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 780px) {
+  .card-collection__item {
+    flex-basis: 33%;
+  }
+}

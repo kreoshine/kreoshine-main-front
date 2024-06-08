@@ -7,10 +7,10 @@ block('advantages')(
         content: "Почему мы:",
       },
       {
-        elem: 'inner',
-        content: [
+          block: 'card-collection',
+          content: [
           {
-            elem: 'item-wrapper',
+            elem: 'item',
             content: {
                 block: 'advantage',
                 icon_url: '/static/images/icons/advantages/reliability.svg',
@@ -20,7 +20,7 @@ block('advantages')(
             }
           },
           {
-            elem: 'item-wrapper',
+            elem: 'item',
             content: {
                 block: 'advantage',
                 icon_url: '/static/images/icons/advantages/customer_focus.svg',
@@ -31,7 +31,7 @@ block('advantages')(
             }
           },
           {
-            elem: 'item-wrapper',
+            elem: 'item',
             content: {
                 block: 'advantage',
                 icon_url: '/static/images/icons/advantages/creativity.svg',
@@ -41,7 +41,7 @@ block('advantages')(
             },
           },
           {
-            elem: 'item-wrapper',
+            elem: 'item',
             content: {
                 block: 'advantage',
                 icon_url: '/static/images/icons/advantages/profit.svg',
@@ -50,7 +50,7 @@ block('advantages')(
             }
           },
           {
-            elem: 'item-wrapper',
+            elem: 'item',
             content: {
                 block: 'advantage',
                 icon_url: '/static/images/icons/advantages/delivery.svg',

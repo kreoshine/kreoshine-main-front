@@ -4,29 +4,7 @@
   align-items: center;
 }
 
-.advantages__inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
 .advantages__title {
   text-align: center;
   margin: 1rem 0;
-}
-
-@media screen and (min-width: 500px) {
-  .advantages__item-wrapper {
-    flex-basis: 50%;
-  }
-
-  .advantages__item {
-    width: 70% !important;
-  }
-}
-
-.advantages__item-wrapper {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
 }

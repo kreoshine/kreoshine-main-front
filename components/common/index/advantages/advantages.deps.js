@@ -1,6 +1,7 @@
 ({
     shouldDeps: [
         // custom
+        { block: 'card-collection' },
         { block: 'advantage' },
 
         // lib
