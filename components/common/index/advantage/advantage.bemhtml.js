@@ -1,7 +1,5 @@
 block('advantage')(
 
-    js()(true),
-
     content()(function() {
         const ctx = this.ctx;
         return [
