@@ -42,6 +42,7 @@ const techs = {
         { path: 'lib' },
         { path: 'components/common' },
         { path: 'components/common/index' },
+        { path: 'components/common/products' },
         { path: 'design/common' },
         { path: 'design/common/header' },
         { path: 'design/common/index' },
