@@ -1,9 +1,5 @@
 block('product-card')(
 
-    mods()(function() {
-        return {'type': this.ctx.productType}
-    }),
-
     addMix()({block: 'container'}),
 
     content()(function () {

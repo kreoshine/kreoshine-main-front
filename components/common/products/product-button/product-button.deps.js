@@ -1,6 +1,9 @@
 ({
     shouldDeps: [
-        // lib
-        // { block: 'button' },
+        { block: 'products' },
+        // {
+        //     block : 'products',
+        //     elem : 'control-btn',
+        // }
     ],
 })
