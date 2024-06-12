@@ -1,0 +1,12 @@
+.navigation__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.navigation__icon {
+  width: 2rem;
+  height: 2rem;
+}

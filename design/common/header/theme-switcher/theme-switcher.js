@@ -1,0 +1,106 @@
+modules.define('theme-switcher', ['i-bem-dom'], function(provide, bemDom) {
+
+const localStorageThemeKey = 'kreoshine:theme'
+
+function _getLocalStorageThemeValue() {
+    return localStorage.getItem(localStorageThemeKey);
+}
+
+function _setLocalStorageThemeValue(theme) {
+    localStorage.setItem(localStorageThemeKey, theme);
+}
+
+provide(bemDom.declBlock(this.name, {
+
+    _changeTheme: function(val) {
+        document.documentElement.style.setProperty(
+            '--header-bg-color', `var(--${val}-header-bg-color)`
+        );
+        document.documentElement.style.setProperty(
+            '--header-text-color', `var(--${val}-header-text-color)`
+        );
+        document.documentElement.style.setProperty(
+            '--main-bg-color', `var(--${val}-main-bg-color)`
+        );
+        document.documentElement.style.setProperty(
+            '--side-gradient-main-bg-color', `var(--${val}-side-gradient-main-bg-color)`
+        );
+        document.documentElement.style.setProperty(
+            '--main-text-color', `var(--${val}-main-text-color)`
+        );
+        document.documentElement.style.setProperty(
+            '--extra-bg-color', `var(--${val}-extra-bg-color)`
+        );
+        document.documentElement.style.setProperty(
+            '--extra-border-color', `var(--${val}-extra-border-color)`
+        );
+        document.documentElement.style.setProperty(
+            '--extra-text-color', `var(--${val}-extra-text-color)`
+        );
+        document.documentElement.style.setProperty(
+            '--extra-hovered-text-color', `var(--${val}-extra-hovered-text-color)`
+        );
+        document.documentElement.style.setProperty(
+            '--attent-bg-color', `var(--${val}-attent-bg-color)`
+        );
+        document.documentElement.style.setProperty(
+            '--attent-text-color', `var(--${val}-attent-text-color)`
+        );
+        // console.log(`applied '${val}' theme`);
+    },
+
+    _onClick: function() {
+        if(this.hasMod('theme', 'dark')) {
+            this.setMod('theme', 'light');
+            _setLocalStorageThemeValue('light')
+        }
+        else {
+            this.setMod('theme', 'dark');
+            _setLocalStorageThemeValue('dark')
+        }
+    },
+
+    _getDefaultTheme: function() {
+        try {
+            const theme_value = _getLocalStorageThemeValue();
+            if (!theme_value) {
+                return 'light';
+            }
+            return theme_value
+        } catch (e) {
+            console.log(e)
+            return 'light';
+        }
+    },
+
+    onSetMod: {
+        js: {
+            'inited': function() {
+                this.setMod('theme', this._getDefaultTheme());
+                this._domEvents().on(
+                    'click',
+                    this._onClick
+                );
+            }
+        },
+        theme: {
+            'light': function(modName, modVal) {
+                this._changeTheme(modVal);
+
+            },
+            'dark': function(modName, modVal) {
+                this._changeTheme(modVal);
+            },
+        },
+    },
+
+    // lazyInit : true,
+    // onInit : function() {
+    //     this._domEvents().on(
+    //         'click',
+    //         this.prototype._onClick);  // в момент клика будет создан экземпляр блока и вызван его метод _onClick
+    // },
+},
+));
+
+});

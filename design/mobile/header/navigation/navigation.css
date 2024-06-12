@@ -1,0 +1,8 @@
+.navigation__menu {
+  background-color: var(--extra-bg-color);
+  border: 1px solid var(--extra-bg-color);
+}
+
+.navigation__button {
+  padding: 0.2rem;
+}

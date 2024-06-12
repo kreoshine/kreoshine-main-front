@@ -1,0 +1,7 @@
+.toolbar__button {
+  border: 0.1rem solid var(--header-bg-color);
+}
+
+.toolbar__button:hover {
+  border: 0.1rem solid var(--main-bg-color);
+}

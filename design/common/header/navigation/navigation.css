@@ -1,0 +1,38 @@
+
+.navigation__button {
+  background: var(--header-bg-color);
+  padding: 0.2rem;
+  border-radius: 15%;
+  /*box-shadow: 0 1px 1px yellowgreen;*/
+}
+
+.navigation__button:hover {
+  border: 0.1rem solid var(--main-bg-color);
+}
+
+.navigation__button:active {
+  transform: scale(0.95);
+}
+
+.navigation__logo {
+  height: 5rem;
+}
+
+.navigation__link {
+  white-space: nowrap;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  color: var(--header-text-color);
+}
+
+.navigation__link:hover {
+  color: var(--extra-hovered-text-color);
+}
+
+.navigation__link:active {
+  transform: scale(1.05);
+}
+
+.navigation__home-link:hover {
+  background-color: var(--main-bg-color);
+}

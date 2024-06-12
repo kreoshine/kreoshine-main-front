@@ -1,0 +1,7 @@
+.page {
+  background: var(--main-bg-color);
+}
+
+:root {
+  --dark-header-text-color: white;
+}

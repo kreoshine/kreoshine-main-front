@@ -1,0 +1,7 @@
+.navigation {
+  background: var(--header-bg-color);
+}
+
+.navigation__button {
+  padding: 0.4rem;
+}

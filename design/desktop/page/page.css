@@ -1,0 +1,24 @@
+@media screen and (min-width: 780px) {
+  .page {
+    background: linear-gradient(
+      to right,
+      var(--side-gradient-main-bg-color),
+      var(--main-bg-color) 10vw,
+      var(--main-bg-color) 90vw,
+      var(--side-gradient-main-bg-color)
+    );
+  }
+
+  .page__inner {
+    width: 80vw;
+  }
+}
+
+.page {
+  min-width: 500px;
+  background-color: var(--main-bg-color);
+}
+
+:root {
+  --dark-header-text-color: black;
+}

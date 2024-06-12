@@ -1,0 +1,4 @@
+.icon {
+  /* allow to cover container */
+  background: center center/cover no-repeat;
+}

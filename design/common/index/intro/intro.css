@@ -1,0 +1,33 @@
+.intro {
+  font-family: Micradi, serif;
+  font-weight: bold;
+}
+
+.intro__name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.intro__description {
+  font-size: 0.8rem;
+}
+
+.intro__slogan {
+  font-size: 1.2rem;
+}
+
+.intro__button {
+  font-family: Helvetica, serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--attent-text-color);
+  background-color: var(--attent-bg-color);
+
+  border-radius: 1rem;
+  border: 0.1rem var(--attent-bg-color) solid;
+}
+
+.intro__button:hover {
+  border: 0.1rem var(--main-text-color) solid;
+}

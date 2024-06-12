@@ -1,0 +1,10 @@
+.header {
+  /* 2rem + 2*0.2rem + 2*0.1rem + 2*0.2rem icon in button */
+  /* icon size + header padding + button border + button padding  */
+  /*height: var(--header-height-size);*/
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.2rem 1rem;
+}
