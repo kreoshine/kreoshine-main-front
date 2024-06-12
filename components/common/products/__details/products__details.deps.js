@@ -1,10 +1,7 @@
 ({
-    // required to update via BEMHTML
     tech: 'js',
-    // shouldDeps: [
-    // ],
-    mustDeps: [
-        // required to update via BEMHTML
+    shouldDeps: [
         { block: 'product-card', tech: 'bemhtml' },
-    ]
+        // { block: 'product-card', tech: 'css' },
+    ],
 })

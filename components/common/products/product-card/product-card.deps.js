@@ -1,7 +1,7 @@
 ({
-    shouldDeps: [
+    mustDeps: [
         // custom
-        { block: 'container' },
+        { block: 'container', tech: 'css' },
 
         // lib
         { block: 'image' },

@@ -26,7 +26,7 @@ provide(bemDom.declElem('products', 'details', {
             'product_name': 'Вывески',
             'images_data': [
                     {
-                        'url': '',
+                        'url': '/static/images/products/img.png',
                         'title': 'Вывески',
                     },
                 ],

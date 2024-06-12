@@ -1,6 +1,15 @@
 ({
     shouldDeps: [
-        { block: 'products', elems: 'menu' },
-        { block: 'products', elems: 'details' },
+        {
+            block: 'products',
+            elems: [
+                'menu',
+                'details',
+            ]
+        },
+
+        // not exact 'products', but should be provided as well
+        { block: 'product-button' },
+        { block: 'product-card' },
     ],
 })

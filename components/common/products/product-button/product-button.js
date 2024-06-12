@@ -1,11 +1,11 @@
-modules.define('control-btn', ['BEMHTML', 'i-bem-dom', 'products'], function(provide, BEMHTML, bemDom, Products) {
+modules.define('product-button', ['BEMHTML', 'i-bem-dom'], function(provide, BEMHTML, bemDom) {
 
 provide(bemDom.declBlock(this.name, {
     onSetMod : {
         'js' : {
             'inited': function() {
                 console.log('asdf')
-                this._domEvents('button').on('click', this._onClick);
+                this._domEvents().on('click', this._onClick);
             }
         }
     },
@@ -29,8 +29,8 @@ provide(bemDom.declBlock(this.name, {
     // },
 
     _onClick: function () {
-        const productsBlock = this.findParentBlock({block: Products});
-        console.log(productsBlock)
+        // const productsBlock = this.findParentBlock({block: Products});
+        console.log('clicked')
             // bemDom.update(
             //     this.domElem,
             //     BEMHTML.apply(

@@ -18,21 +18,16 @@ provide(bemDom.declElem('products', 'menu', {
                 bemDom.update(
                     this.domElem,
                     BEMHTML.apply(
-                        {
-                            block: 'menu',
-                            content: [
-                                this.params.map( item => (
-                                    {
-                                        block: 'control-btn',
-                                        content: {
-                                            block: 'product-button',
-                                            productType: item.product_type,
-                                            productName: item.product_name,
-                                        }
-                                    }
-                                ))
-                            ]
-                        }
+                        [
+                            this.params.map( item => (
+                                {
+                                    block: 'product-button',
+                                    productType: item.product_type,
+                                    productName: item.product_name,
+                                }
+                            ))
+                        ]
+
                     )
                 );
 

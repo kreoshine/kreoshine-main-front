@@ -1,10 +1,10 @@
 block('product-button')(
 
+    js()(true),
+
     mods()(function() {
         return {'type': this.ctx.productType}
     }),
-
-    // addMix()({block: 'button'}),
 
     tag()('button'),
     content()(function () {
