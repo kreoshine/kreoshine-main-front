@@ -3,16 +3,29 @@ modules.define('products__details', ['BEMHTML', 'i-bem-dom'], function(provide, 
 const staticProductsData = {
     'signboard':
         {
-            'type': 'signboard',
             'name': 'Вывескa',
             'images_data': [
                 {
-                    'url': '',
+                    'url': '/static/images/products/img.png',
                     'title': 'Вывескa',
                 },
             ],
             'descriptions_content': [
                 'Вывески это хорошо',
+                'от kreoshine!!!!!!!!!!',
+            ],
+        },
+    'boxes':
+        {
+            'name': 'Короба',
+            'images_data': [
+                {
+                    'url': '/static/images/products/img2.png',
+                    'title': 'Вывескa',
+                },
+            ],
+            'descriptions_content': [
+                'Короба это ещё лучше',
                 'от kreoshine!!!!!!!!!!',
             ],
         },
@@ -23,10 +36,10 @@ provide(bemDom.declElem('products', 'details', {
 
     _getDefaultParams : function() {
         return {
-            'product_name': 'Вывески',
+            'product_name': 'KreosSHine',
             'images_data': [
                     {
-                        'url': '/static/images/products/img.png',
+                        'url': '/static/images/logo.svg',
                         'title': 'Вывески',
                     },
                 ],
@@ -52,7 +65,6 @@ provide(bemDom.declElem('products', 'details', {
                         }
                     )
                 );
-                // this.setMod('type', 'signboard');
             }
         },
         type:

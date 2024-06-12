@@ -1,5 +1,5 @@
 ({
-    mustDeps: [
+    shouldDeps: [
         // custom
         { block: 'container', tech: 'css' },
 

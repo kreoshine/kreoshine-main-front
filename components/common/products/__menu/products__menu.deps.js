@@ -6,7 +6,7 @@
         { block: 'menu' },
         // { block: 'menu', elems: ['item'] }
         { block: 'product-button', tech: 'bemhtml' },
-        // lib
-        { block: 'button' },
+
+        { block: 'products' },
     ],
 })

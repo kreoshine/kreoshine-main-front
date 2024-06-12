@@ -8,7 +8,7 @@
             ]
         },
 
-        // not exact 'products', but should be provided as well
+        // not exact 'products' depends, but should be provided as well for 'js-init'
         { block: 'product-button' },
         { block: 'product-card' },
     ],

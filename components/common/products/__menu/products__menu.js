@@ -8,6 +8,10 @@ provide(bemDom.declElem('products', 'menu', {
                 'product_type': 'signboard',
                 'product_name': 'Вывески',
             },
+            {
+                'product_type': 'boxes',
+                'product_name': 'короба',
+            },
         ]
     },
 
@@ -22,6 +26,7 @@ provide(bemDom.declElem('products', 'menu', {
                             this.params.map( item => (
                                 {
                                     block: 'product-button',
+                                    mix: { block: 'products', elem: 'button' },
                                     productType: item.product_type,
                                     productName: item.product_name,
                                 }

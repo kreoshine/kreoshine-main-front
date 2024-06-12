@@ -1,4 +1,4 @@
-modules.define('product-button', ['BEMHTML', 'i-bem-dom'], function(provide, BEMHTML, bemDom) {
+modules.define('product-button', ['i-bem-dom', 'products'], function(provide, bemDom, Products) {
 
 provide(bemDom.declBlock(this.name, {
     onSetMod : {
@@ -9,30 +9,10 @@ provide(bemDom.declBlock(this.name, {
             }
         }
     },
-    //
-    // onSetMod: {
-    //     type: function(modName, modVal, oldModVal) {
-    //         const productsBlock = this.findParentBlock({block: Products});
-    //         console.log(productsBlock)
-    //         // bemDom.update(
-    //         //     this.domElem,
-    //         //     BEMHTML.apply(
-    //         //         {
-    //         //             block: 'product-card',
-    //         //             productTitleHtml: details['name'],
-    //         //             productImagesData: details['images_data'],
-    //         //             productDescriptionsContent: details['descriptions_content'],
-    //         //         }
-    //         //     )
-    //         // );
-    //     }
-    // },
 
     _onClick: function () {
-        const currentType = this.params.type
-        console.log(currentType)
-
-
+        const detailsBlock = this.findParentBlock({ block: Products }).findChildElem({ elem: 'details' })
+        detailsBlock.setMod('type', this.params.type)
     }
 }, {
 
