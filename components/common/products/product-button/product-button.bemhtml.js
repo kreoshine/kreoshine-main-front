@@ -1,10 +1,12 @@
 block('product-button')(
 
-    js()(true),
-
-    mods()(function() {
+    js()( function () {
         return {'type': this.ctx.productType}
     }),
+
+    // mods()(function() {
+    //     return {'type': this.ctx.productType}
+    // }),
 
     tag()('button'),
     content()(function () {

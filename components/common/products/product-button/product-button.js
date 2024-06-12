@@ -29,20 +29,10 @@ provide(bemDom.declBlock(this.name, {
     // },
 
     _onClick: function () {
-        // const productsBlock = this.findParentBlock({block: Products});
-        console.log('clicked')
-            // bemDom.update(
-            //     this.domElem,
-            //     BEMHTML.apply(
-            //         {
-            //             block: 'product-card',
-            //             productTitleHtml: details['name'],
-            //             productImagesData: details['images_data'],
-            //             productDescriptionsContent: details['descriptions_content'],
-            //         }
-            //     )
-            // );
-        // this.setMod('type', '')
+        const currentType = this.params.type
+        console.log(currentType)
+
+
     }
 }, {
 
