@@ -1,3 +1,9 @@
 .products {
     display: flex;
 }
+
+.products__details {
+    flex-grow: 4;
+    display: flex;
+    justify-content: center;
+}
