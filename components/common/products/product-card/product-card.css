@@ -4,6 +4,7 @@
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
+  width: 100%;
 }
 
 .product-card__title {
@@ -12,5 +13,6 @@
 
 .product-card__image {
   width: 100px;
+  align-self: center;
   /* fixme: image size and outer container */
 }

@@ -1,8 +1,8 @@
 .products__menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   margin: 1rem 0 0;
   padding: 0;
-
 }
