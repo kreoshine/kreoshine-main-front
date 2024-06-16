@@ -75,6 +75,7 @@ provide(bemDom.declElem('products', 'details', {
                     BEMHTML.apply(
                         {
                             block: 'product-card',
+                            productRefName: modVal,
                             productTitleHtml: details['name'],
                             productImagesData: details['images_data'],
                             productDescriptionsContent: details['descriptions_content'],

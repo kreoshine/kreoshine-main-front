@@ -1,5 +1,11 @@
 block('product-card')(
 
+    addAttrs()(function() {
+        return {
+            name : this.ctx.productRefName,
+        }
+    }),
+
     content()(function () {
         let productImagesData = this.ctx.productImagesData
 

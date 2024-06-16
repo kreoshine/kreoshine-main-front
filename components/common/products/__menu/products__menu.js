@@ -1,4 +1,4 @@
-modules.define('products__menu', ['BEMHTML', 'i-bem-dom'], function(provide, BEMHTML, bemDom) {
+modules.define('products__menu', ['BEMHTML', 'i-bem-dom', 'product-button'], function(provide, BEMHTML, bemDom, ProductButton) {
 
 provide(bemDom.declElem('products', 'menu', {
 
@@ -35,6 +35,16 @@ provide(bemDom.declElem('products', 'menu', {
                     )
                 );
 
+                // apply products content by anchor value
+                const anchorValue = document.URL.split('#')[1];
+                if (anchorValue) {
+                    const productButton = this.findChildBlock(
+                        {block: ProductButton, modName: 'type', modVal: anchorValue}
+                    );
+                    if (productButton) {
+                        productButton.domElem.click()
+                    }
+                }
             }
         },
     }
