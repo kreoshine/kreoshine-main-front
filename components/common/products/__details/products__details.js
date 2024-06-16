@@ -1,53 +1,9 @@
 modules.define('products__details', ['BEMHTML', 'i-bem-dom'], function(provide, BEMHTML, bemDom) {
 
-const staticProductsData = {
-    'signboard':
-        {
-            'name': 'Вывескa',
-            'images_data': [
-                {
-                    'url': '/static/images/products/img.png',
-                    'title': 'Вывескa',
-                },
-            ],
-            'descriptions_content': [
-                'Вывески это хорошо',
-                'от kreoshine!!!!!!!!!!',
-            ],
-        },
-    'boxes':
-        {
-            'name': 'Короба',
-            'images_data': [
-                {
-                    'url': '/static/images/products/img2.png',
-                    'title': 'Вывескa',
-                },
-            ],
-            'descriptions_content': [
-                'Короба это ещё лучше',
-                'от kreoshine!!!!!!!!!!',
-            ],
-        },
-
-}
-
 provide(bemDom.declElem('products', 'details', {
 
     _getDefaultParams : function() {
-        return {
-            'product_name': 'KreosSHine',
-            'images_data': [
-                    {
-                        'url': '/static/images/logo.svg',
-                        'title': 'Вывески',
-                    },
-                ],
-            'descriptions_content': [
-                'Lorem the best',
-                'agdsh328',
-            ]
-        }
+        return staticProductsData['default'];
     },
 
     onSetMod: {
@@ -59,7 +15,7 @@ provide(bemDom.declElem('products', 'details', {
                     BEMHTML.apply(
                         {
                             block: 'product-card',
-                            productTitleHtml: this.params.product_name,
+                            productTitleHtml: this.params.name,
                             productImagesData: this.params.images_data,
                             productDescriptionsContent: this.params.descriptions_content,
                         }

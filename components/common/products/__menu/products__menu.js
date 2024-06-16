@@ -7,16 +7,14 @@ modules.define(
 provide(bemDom.declElem('products', 'menu', {
 
     _getDefaultParams : function() {
-        return [
-            {
-                'product_type': 'signboard',
-                'product_name': 'Вывески',
-            },
-            {
-                'product_type': 'boxes',
-                'product_name': 'короба',
-            },
-        ]
+        const menuItemsData = Object.entries(staticProductsData).map(([key, value]) => {
+            return {
+                'type': key,
+                'name': value.name
+            };
+        });
+        // note: 'default' type is the one that is applied when nothing is selected, so it is redundant for menu items
+        return menuItemsData.filter(item => item.type !== "default");
     },
 
     onSetMod: {
@@ -48,8 +46,8 @@ provide(bemDom.declElem('products', 'menu', {
                     this.params.map( item => (
                         {
                             block: 'product-button',
-                            productType: item.product_type,
-                            productName: item.product_name,
+                            productType: item.type,
+                            productName: item.name,
                         }
                     ))
                 ]
