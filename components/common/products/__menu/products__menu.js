@@ -1,4 +1,8 @@
-modules.define('products__menu', ['BEMHTML', 'i-bem-dom', 'product-button'], function(provide, BEMHTML, bemDom, ProductButton) {
+modules.define(
+    'products__menu',
+    ['BEMHTML', 'i-bem-dom', 'product-button'],
+    function(provide, BEMHTML, bemDom, ProductButton
+) {
 
 provide(bemDom.declElem('products', 'menu', {
 
@@ -18,36 +22,41 @@ provide(bemDom.declElem('products', 'menu', {
     onSetMod: {
         js: {
             inited: function() {
-                // create js-based default content
-                bemDom.update(
-                    this.domElem,
-                    BEMHTML.apply(
-                        [
-                            this.params.map( item => (
-                                {
-                                    block: 'product-button',
-                                    productType: item.product_type,
-                                    productName: item.product_name,
-                                }
-                            ))
-                        ]
-
-                    )
-                );
-
-                // apply products content by anchor value
-                const anchorValue = document.URL.split('#')[1];
-                if (anchorValue) {
-                    const productButton = this.findChildBlock(
-                        {block: ProductButton, modName: 'type', modVal: anchorValue}
-                    );
-                    if (productButton) {
-                        productButton.domElem.click()
-                    }
-                }
-            }
+                this._renderMenuContent();
+                this._initProductRender();
+            },
         },
-    }
+    },
+
+    _initProductRender() {
+        // apply product content by anchor value
+        const anchorValue = document.URL.split('#')[1];
+        if (anchorValue) {
+            const productButton = this.findChildBlock({block: ProductButton, modName: 'type', modVal: anchorValue});
+            if (productButton) {
+                productButton.domElem.click();
+            }
+        }
+    },
+
+    _renderMenuContent() {
+        // create js-based content
+        bemDom.update(
+            this.domElem,
+            BEMHTML.apply(
+                [
+                    this.params.map( item => (
+                        {
+                            block: 'product-button',
+                            productType: item.product_type,
+                            productName: item.product_name,
+                        }
+                    ))
+                ]
+
+            )
+        );
+    },
 }, {
 
 }));
