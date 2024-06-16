@@ -46,6 +46,7 @@ const techs = {
         { path: 'design/common' },
         { path: 'design/common/header' },
         { path: 'design/common/index' },
+        { path: 'design/common/products' },
     ];
 
 module.exports = function(config) {

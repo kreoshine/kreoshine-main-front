@@ -1,0 +1,15 @@
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.product-card {
+  transition: 2s;
+  animation: show 2s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
