@@ -5,23 +5,27 @@ modules.define(
 ) {
 
 provide(bemDom.declElem('products', 'menu', {
-
-    _getDefaultParams : function() {
-        const menuItemsData = Object.entries(staticProductsData).map(([key, value]) => {
-            return {
-                'type': key,
-                'name': value.name
-            };
-        });
-        // note: 'default' type is the one that is applied when nothing is selected, so it is redundant for menu items
-        return menuItemsData.filter(item => item.type !== "default");
+    /**
+     * Получение списка продуктов
+     * @returns {Promise<Array>} Список продуктов
+     */
+    getProducts: async function() {
+        const productsBaseUrl = httpSchema + serverDomain + productsEndpoint;
+        const response = await fetch(new URL(productsBaseUrl));
+        return await response.json();
     },
 
     onSetMod: {
         js: {
-            inited: function() {
-                this._renderMenuContent();
-                this._initProductRender();
+            inited: async function() {
+                try {
+                    let productsInfoList = await this.getProducts();
+                    this._renderMenuContent(productsInfoList);
+                    this._initProductRender();
+                } catch (e) {
+                    console.error(e);
+                    // todo: apply some specific content for page
+                }
             },
         },
     },
@@ -37,17 +41,17 @@ provide(bemDom.declElem('products', 'menu', {
         }
     },
 
-    _renderMenuContent() {
+    _renderMenuContent(productsInfo) {
         // create js-based content
         bemDom.update(
             this.domElem,
             BEMHTML.apply(
                 [
-                    this.params.map( item => (
+                    productsInfo.map( product => (
                         {
                             block: 'product-button',
-                            productType: item.type,
-                            productName: item.name,
+                            productType: product.type,
+                            productName: product.name,
                         }
                     ))
                 ]

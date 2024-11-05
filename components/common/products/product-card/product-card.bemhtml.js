@@ -19,6 +19,7 @@ block('product-card')(
             ))
         }
 
+//      todo: rename to buildImageBlock | createImageContainer | getImageElement
         function _getImageBlock(imageData) {
              return {
                 block: 'image',
