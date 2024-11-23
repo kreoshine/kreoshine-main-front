@@ -11,7 +11,12 @@ provide(bemDom.declElem('products', 'menu', {
      */
     getProducts: async function() {
         const productsBaseUrl = httpSchema + serverDomain + productsEndpoint;
-        const response = await fetch(new URL(productsBaseUrl));
+        const fieldsToRequest = ['name', 'type']
+
+        let productsURL = new URL(productsBaseUrl)
+        productsURL.searchParams.set('fields', fieldsToRequest.join())
+
+        const response = await fetch(productsURL);
         return await response.json();
     },
 
