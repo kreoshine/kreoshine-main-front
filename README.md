@@ -12,6 +12,11 @@ Current project is based on
 
 Other versions may not be supported
 
+Next command may be helpfully
+```bash
+nvm use 14.21.3
+```
+
 ### Project structure
 The current project has some changes in the file structure relative to the default one:
 
